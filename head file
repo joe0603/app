@@ -1,0 +1,118 @@
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
+void intro();
+void intro(){
+
+	
+	printf("(C)Copyright|grassrice|company\n");
+	system("pause");
+	 }
+void square();
+void square(){
+
+	
+	printf("---------------\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n|             |\n---------------\n");
+	system("pause");
+	 }
+	void c();
+	void c(){
+		printf("c");
+	} 
+	void tool(){
+			int e;
+	printf("----菜单----\n1、测BMI指数\n2、打开百度\n3、打开超凡学院\n4、体积计算\n5、表面积计算---------------------------\n（C）Copyright by Icysundayzhou 2018\n      ");
+	scanf("%d",&e);
+	 	if(e==1)
+		{int a,b,c;
+		char d;
+		float bmi;
+	
+		printf("请输入年龄");
+    	scanf("%d",&a); 
+    		printf("请输入身高");
+    	scanf("%d",&b); 
+    		printf("请输入体重");
+    	scanf("%d",&c);
+    	bmi=c/((b*1.0/100)*(b*1.0/100));
+		printf("按任意字符获得结果\n--------------------\n");
+	
+	 
+		scanf("%c",&d);
+		if(bmi<=18.5)
+			{
+			printf("你的年龄是%d岁，\n身高%d厘米，\n体重%d千克,\nBMI指数是%.1f,\n过瘦。\n",a,b,c,bmi);
+			system("pause");}
+		else if(bmi<=25)
+			{
+			printf("你的年龄是%d岁，\n身高%d厘米，\n体重%d千克,\nBMI指数是%.1f,\n正常。\n",a,b,c,bmi);
+			system("pause");}
+		else if(bmi<=28)
+			{
+			printf("你的年龄是%d岁，\n身高%d厘米，\n体重%d千克,\nBMI指数是%.1f,\n过重。",a,b,c,bmi);
+			system("pause");}
+		else if(bmi<=32)
+		{
+			printf("你的年龄是%d岁，\n身高%d厘米，\n体重%d千克,\nBMI指数是%.1f,\n肥胖。",a,b,c,bmi);
+			system("pause");}
+		else
+			{
+			printf("你的年龄是%d岁，\n身高%d厘米，\n体重%d千克,\nBMI指数是%.1f,\n非常肥胖。",a,b,c,bmi);
+			system("pause");}
+		}
+	else if(e==2)
+		{
+		system("start www.baidu.com");
+		system("pause");}
+	else if(e==3)
+		{
+		system("start www.chaofanxueyuan.com");
+		system("pause");}
+	else if(e==4)
+		{
+			printf("1、正方体\n2、长方体\n");
+			int g,h,v,i,j,k;
+			scanf("%d",&g);
+			if(g==1)
+			{printf("请输入棱长\n"); 
+			scanf("%d",&h);
+			v=h*h*h;
+			printf("V=a3\n =%d*%d*%d\n =%d\n",h,h,h,v);
+			system("pause"); 
+			}
+			else 
+			{printf("请输入长，宽，高"); 
+			scanf("%d %d %d",&i,&j,&k);
+			v=i*j*k;
+			printf("V=abh\n =%d*%d*%d\n =%d\n",i,j,k,v); 
+			system("pause");
+			
+		}
+		} 
+			else if(e==5)
+		{
+			printf("1、正方体\n2、长方体\n");
+			int l,m,n,o,p,q,r;
+			scanf("%d",&l);
+			if(l==1)
+			{printf("请输入棱长\n"); 
+			scanf("%d",&m);
+			n=6*m*m;
+			printf("S=6a2\n =6*%d*%d\n =%d\n",m,m,n);
+			system("pause"); 
+			}
+			else 
+			{printf("请输入长，宽，高"); 
+			scanf("%d %d %d",&o,&p,&q);
+			r=2*(o*p+o*q+p*q);
+			printf("S=2(ah+bh+ab)\n =2*(%d*%d+%d*%d+%d*%d)\n =%d\n",o,p,o,q,p,q,r); 
+			system("pause");
+		
+			}
+		
+	
+
+} 
+		
+	} 
+#endif
